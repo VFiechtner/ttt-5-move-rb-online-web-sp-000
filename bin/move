@@ -1,4 +1,5 @@
 !/usr/bin/env ruby
+chmod+x bin/move
 
 require_relative '../lib/move.rb'
 
