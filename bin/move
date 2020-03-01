@@ -12,7 +12,7 @@ puts "Where would you like to go?"
 input = gets.strip
 input_to_index(input)
 
-puts move(board, input, "X")
+puts move(board, index, "X")
 input = gets.strip
 input_to_index(input)
 
