@@ -13,5 +13,7 @@ input = gets.strip
 input_to_index(input)
 
 puts move(board, index, "X")
+input = gets.strip
+input_to_index(input)
 
 puts display_board
