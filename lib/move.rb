@@ -8,8 +8,5 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(user_input)
-  user_input = ["1","2","3","4","5","6","7","8","9"]
-  converted_input = input_to_index(user_input)
-  puts "'user_input'.to_i"
-  puts "user_input - 1"
-end
+   user_input.to_i - 1
+ end
