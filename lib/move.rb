@@ -18,6 +18,6 @@ end
 
  update_array_at_with(board, 0, 'X')
 
-def move(position, char)
-  board[position] = char
+def move(index, value)
+  board[index] = value
 end
