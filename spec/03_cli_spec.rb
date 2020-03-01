@@ -54,7 +54,7 @@ describe './bin/move executing a CLI Application' do
     allow(self).to receive(:gets).and_return('1')
     board = get_variable_from_file("./bin/move", "board")
 
-    expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board).to eq([" ", "X", " ", " ", " ", " ", " ", " ", " "])
   end
 
   it 'calls display_board passing the modified board' do
@@ -62,7 +62,7 @@ describe './bin/move executing a CLI Application' do
 
     allow(self).to receive(:gets).and_return('1')
     allow(self).to receive(:display_board)
-    expect(self).to receive(:display_board).with(["X", " ", " ", " ", " ", " ", " ", " ", " "]).at_least(:once)
+    expect(self).to receive(:display_board).with([" ", "X", " ", " ", " ", " ", " ", " ", " "]).at_least(:once)
 
     run_file("./bin/move")
   end
@@ -72,6 +72,6 @@ describe './bin/move executing a CLI Application' do
 
     output = capture_puts{ run_file("./bin/move") }
 
-    expect(output).to include(" X |   |   ")
+    expect(output).to include("   | X |   ")
   end
 end
